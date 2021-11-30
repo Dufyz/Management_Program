@@ -4,12 +4,13 @@ from C_save import db_funcionario
 def menu_funcionarios():
     
     print('\n', '-' * 50)   
-    print('                 Menu Funcionários')
+    print('                 \n                  Menu Funcionários')
     print('\n', '-' * 50)
 
     print('\n[1] Registrar Funcionáro',
-        '\n[2] Banco de dados dos funcionários'
-        '\n[3] Voltar')
+        '\n[2] Banco de dados dos funcionários',
+        '\n[3] Editar banco de dados'
+        '\n[4] Voltar')
 
     section = int(input('\nFaça sua escolha: ')) 
 
@@ -24,7 +25,8 @@ def menu_funcionarios():
     elif section == 3:
         pass
 
+    elif section == 4:
+        pass
+
     else:
         print('Parece que você não escolheu nenhuma opção válida')
-
-menu_funcionarios()

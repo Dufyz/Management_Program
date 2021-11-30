@@ -4,12 +4,13 @@ from D_save import db_estoque
 def menu_estoque():
     
     print('\n', '-' * 50)   
-    print('                 Menu Estoque')
+    print('                 \n                   Menu Estoque')
     print('\n', '-' * 50)
 
     print('\n[1] Registrar produto',
-        '\n[2] Banco de dados dos produtos'
-        '\n[3] Voltar')
+        '\n[2] Banco de dados dos produtos',
+        '\n[3] Editar banco de dados'
+        '\n[4] Voltar')
 
     section = int(input('\nFaça sua escolha: '))
 
@@ -22,6 +23,9 @@ def menu_estoque():
         return(menu_estoque())
 
     elif section == 3:
+        pass
+
+    elif section == 4:
         pass
 
     else:

@@ -5,12 +5,13 @@ from B_save import db_cliente
 def menu_clientes():
     
     print('\n', '-' * 50)   
-    print('                 Menu Clientes')
+    print('                 \n                   Menu Clientes')
     print('\n', '-' * 50)
 
     print('\n[1] Registrar Cliente',
-        '\n[2] Banco de dados dos clientes'
-        '\n[3] Voltar')
+        '\n[2] Banco de dados dos clientes',
+        '\n[3] Editar banco de dados'
+        '\n[4] Voltar')
 
     section = int(input('\nFaça sua escolha: '))
 
@@ -23,6 +24,9 @@ def menu_clientes():
         return(menu_clientes())
 
     elif section == 3:
+        pass
+
+    elif section == 4:
         pass
 
     else:

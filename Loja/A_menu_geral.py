@@ -1,15 +1,17 @@
 import time
 
 from B_menu01 import menu_clientes
+from C_menu03 import menu_funcionarios
 from D_menu02 import menu_estoque
 
 def menu_geral():
-    print('\n', '-' * 50)
-    print('                 Menu Geral')
+
+    print('\n', '-' * 50)   
+    print('                 \n                   Menu Geral')
     print('\n', '-' * 50)
 
     print('\n[1] Clientes',
-        #'\n[2] Funcionários'
+        '\n[2] Funcionários'
         '\n[3] Estoque'
         '\n[4] SAIR')
 
@@ -20,6 +22,7 @@ def menu_geral():
         return(menu_geral())
 
     elif section == 2:
+        menu_funcionarios()
         return(menu_geral())
 
     elif section == 3:
@@ -34,6 +37,7 @@ def menu_geral():
         menu_geral()
 
     time.sleep(1)
-    print('\n fim \n')
+    print('\nFechando programa \n')
+    time.sleep(1)
 
 menu_geral()

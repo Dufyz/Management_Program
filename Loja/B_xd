@@ -11,6 +11,6 @@ comando_mysql = f'SELECT *from clientes'
             print(f'Compras: {c[3]}')
 
 
-{__nome}, {__sobrenome}, {__idade}, {__compras}
+{__nome}, {__documento}, {__nascimento}, {__compras}
 
 

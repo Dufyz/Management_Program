@@ -18,16 +18,17 @@ def db_funcionario():
 
     dbfuncionario = cursor.fetchall()
 
+    print(f'\nFUNCIONÁRIOS REGISTRADOS: ')
+    
     time.sleep(1)
 
     for c in dbfuncionario:
         print(f'\nID: {c[0]}',
               f'\nNome: {c[1]}',
               f'\nDocumento: {c[2]}',
-              f'\nSalário: R${c[3]}\n')
+              f'\nData de nascimento: {c[3]}',
+              f'\nSalário: R${c[4]}\n')
     
     time.sleep(1)
 
     pass
-
-db_funcionario()

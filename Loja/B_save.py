@@ -17,13 +17,14 @@ def db_cliente():
     cursor.execute(comando_mysql)
     dbcliente = cursor.fetchall()
 
-    print('\n CLIENTES REGISTRADOS: ')
+    print(f'\nCLIENTES REGISTRADOS: ')
 
     time.sleep(1)
 
     for c in dbcliente:
-        print(f'\nNome: {c[0]}')
-        print(f'Sobrenome: {c[1]}')
-        print(f'Idade: {c[2]}')
-        print(f'Compras: {c[3]}') 
+        print(f'\nID: {c[0]}')
+        print(f'Nome: {c[1]}')
+        print(f'Documento: {c[2]}')
+        print(f'Data de nascimento: {c[3]}')
+        print(f'Total de compras: {c[4]}') 
     pass
