@@ -1,4 +1,4 @@
-# 🏬 eCommerce
+# 🏬 Management Program
 
 A business management program.
 
